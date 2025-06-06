@@ -5,6 +5,162 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataScreen">
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="55dp"
+    android:background="@drawable/second_background_img"
+    tools:context=".DataScreen" >
+
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="314dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Enter date(YYYY-MM-DD)"
+        android:textColorHint="@color/grey"
+        android:text=" Date  :   "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/minutesInput"
+        android:layout_width="316dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=" Minutes played :"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <TextView
+        android:id="@+id/ratingTxt"
+        android:layout_width="290dp"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="Rating(1 to 5 stars) :"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="237dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="386dp"
+        android:layout_height="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/addEntryBtn"
+            android:layout_width="138dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="40dp"
+            android:text="Add Entry"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.157"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="138dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="200dp"
+            android:backgroundTint="@color/black"
+            android:text="Clear"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.179"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/viewDetailsBtn"
+            android:layout_width="138dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="120dp"
+            android:backgroundTint="@color/black"
+            android:text="View Details"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.947"
+            tools:ignore="TextSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/gameGenreTxt"
+        android:layout_width="294dp"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="Game genre:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
