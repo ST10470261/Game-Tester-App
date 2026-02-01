@@ -1,8 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Game Tester App</string>
-    <!-- add the following below to the existing code-->
-    <string name="selected_item">Selected item:</string>
-    <string-array name="Genres">
+    <string-array name="ratings" />
+    <string-array name="game_genres">
         <item>Puzzle Games</item>
         <item>Adventure Games</item>
         <item>Sport Games</item>

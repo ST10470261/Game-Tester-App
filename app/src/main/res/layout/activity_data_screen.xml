@@ -11,42 +11,73 @@
     android:background="@drawable/second_background_img"
     tools:context=".DataScreen" >
 
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Date:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/dateInput"
+        android:id="@+id/datePicker"
         android:layout_width="314dp"
         android:layout_height="56dp"
+        android:autofillHints="false"
+        android:clickable="true"
         android:ems="10"
-        android:inputType="date"
+        android:focusable="false"
         android:hint="Enter date(YYYY-MM-DD)"
-        android:textColorHint="@color/grey"
-        android:text=" Date  :   "
+        android:inputType="date"
+        android:longClickable="false"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textColorHint="@color/grey"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/lblMinutesPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Minutes Played:"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
 
     <EditText
         android:id="@+id/minutesInput"
         android:layout_width="316dp"
         android:layout_height="59dp"
         android:ems="10"
+        android:hint="Enter minutes played (e.g., 60)"
+        android:autofillHints=""
         android:inputType="number"
-        android:text=" Minutes played :"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textColorHint="@color/grey"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.124" />
 
     <TextView
         android:id="@+id/ratingTxt"
@@ -65,7 +96,7 @@
         app:layout_constraintVertical_bias="0.621" />
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/ratingBarInput"
         android:layout_width="237dp"
         android:layout_height="60dp"
 
@@ -148,7 +179,7 @@
         app:layout_constraintVertical_bias="0.246" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/GenreInput"
         android:layout_width="298dp"
         android:layout_height="59dp"
         android:layout_marginStart="51dp"
@@ -160,7 +191,6 @@
         app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354" />
-
+        app:layout_constraintVertical_bias="0.354"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
